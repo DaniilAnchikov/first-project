@@ -11,3 +11,32 @@
   bottom: 0;
   text-align: center;
 }
+
+.article {
+  border: 1px solid red;
+}
+
+nav {
+  border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a {
+  position: relative;
+}
+
+.crumb a::after {
+  content: ">";
+  position: absolute;
+  padding: 0 5px;
+  color: #ffffff;
+  font-size: 80%;
+}
